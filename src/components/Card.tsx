@@ -1,3 +1,4 @@
+import { Box } from "@mui/material";
 import React from "react";
 
 interface CardProps {
@@ -9,17 +10,17 @@ interface CardProps {
 
 export default function Card({ title, duration, thumb, video_id }: CardProps) {
     return (
-        <div className="card" id={video_id}>
-            <div className="image">
+        <Box className="card" id={video_id}>
+            <Box className="image">
                 <img src={thumb} />
-            </div>
-            <div className="content">
+            </Box>
+            <Box className="content">
                 <p className="title text--medium">{title}</p>
-                <div className="info">
+                <Box className="info">
                     <p className="text--medium">{duration}</p>
                     <p className="price text--medium">Free</p>
-                </div>
-            </div>
-        </div>
+                </Box>
+            </Box>
+        </Box>
     );
 }
