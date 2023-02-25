@@ -1,6 +1,5 @@
 import React from "react";
 import CardList from "./components/CardList";
-import ColoredBox from "./components/ColoredBox";
 import Form from "./components/Form";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
@@ -12,7 +11,6 @@ function App() {
             <Hero />
             <CardList />
             <Form />
-            {/* <ColoredBox /> */}
         </div>
     );
 }
